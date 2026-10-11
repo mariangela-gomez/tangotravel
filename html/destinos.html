@@ -1,138 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="description" content="Compra tu paquete turístico y viaja al mejor precio | Conoce los paquetes de viajes que Tango Travel tiene para vos!">
-  <meta name="keywords" content="viajes, tours, paquetes turísticos" />
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
-  </script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="../css/style.css" />
-  <!-- Google Fonts -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Compra tu paquete turístico y viaja al mejor precio. Conocé los paquetes de viajes que Tango Travel tiene para vos.">
+  <title>Destinos | Tango Travel</title>
+  <link rel="icon" type="image/png" href="../images/favicon-16x16.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Vollkorn:ital,wght@1,400;1,500;1,600;1,700&display=swap"
-    rel="stylesheet">
-  <title>Destinos</title>
-  <link rel="icon" type="image/x-icon" href="../images/favicon-16x16.png">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../css/modern.css">
+  <script>document.documentElement.classList.add('js')</script>
+  <script defer src="../js/vendor/gsap.min.js"></script>
+  <script defer src="../js/vendor/ScrollTrigger.min.js"></script>
+  <script defer src="../js/main.js"></script>
 </head>
-
 <body>
-
-  <!-- Header -->
-
-  <header>
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
-      <div class="container-fluid">
-        <a href="#" class="navbar-brand f-2 fs-2 navbarTitle ">Tango Travel Agency</a>
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menuNavegacion">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div id="menuNavegacion" class="collapse navbar-collapse justify-content-sm-start justify-content-lg-end ">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link fs-4" href="../index.html">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link fs-4" href="destinos.html">Destinos</a></li>
-            <li class="nav-item"><a class="nav-link fs-4" href="aboutus.html">Nosotros</a></li>
-            <li class="nav-item"><a class="nav-link fs-4" href="excursiones.html">Servicios</a></li>
-            <li class="nav-item"><a class="nav-link fs-4" href="contacto.html">Contacto</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+  <header class="site-header solid">
+    <div class="wrap nav">
+      <a href="../index.html" class="brand">Tango<span>Travel</span></a>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false"><span></span></button>
+      <ul class="nav-links"><li><a href="../index.html">Inicio</a></li><li><a href="destinos.html" class="active">Destinos</a></li><li><a href="aboutus.html">Nosotros</a></li><li><a href="excursiones.html">Servicios</a></li><li><a href="contacto.html">Contacto</a></li></ul>
+    </div>
   </header>
-
-  <!-- End of Header -->
-
-  <section class="backgroundImage">
-    <h1 class="text-center text-white m-5 commonTitle fw-bold commonTitle">Destinos</h1>
-    <div class="container">
-      <div class="row mb-5 g-3">
-        <div class="col-12 col-md-6 col-lg-4 text-center">
-          <div class="card w-100">
-            <img src="../images/perito.jpg" class="card-img-top" alt="calafate">
-            <div class="card-body">
-              <h2 class="card-title fs-2 fw-bold text-primary">Calafate</h2>
-              <p class="text-secondary fs-5">El Calafate es una ciudad cerca del borde del Campo de Hielo Patagónico Sur
-                en
-                la
-                provincia argentina de Santa Cruz.</p>
-            </div>
-            <ul class="list-group list-group-flush bg-light">
-              <li class="list-group-item text-secondary">Traslado aeropuerto / hotel / aeropuerto</li>
-              <li class="list-group-item text-secondary">3 noches de alojamiento en el Calafate</li>
-              <li class="list-group-item text-secondary">Excursión Glaciar Perito Moreno</li>
-              <li class="list-group-item text-secondary">Incluye la entrada al parque nacional</li>
-              <li class="list-group-item text-primary fw-bold"><a href="#" class="btn btnTour w-50">Reservar</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4 text-center">
-          <div class="card w-100">
-            <img src="../images/salta.jpg" class="card-img-top cardImage" alt="salta">
-            <div class="card-body text-center">
-              <h2 class="card-title text-center fs-2 fw-bold text-primary">Salta</h2>
-              <p class="text-secondary fs-5">Es una capital provincial del noroeste montañoso de Argentina. Fundada en
-                1582 y conocida por su hermosa arquitectura.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item text-secondary">Traslado aeropuerto / hotel / aeropuerto</li>
-              <li class="list-group-item text-secondary">5 noches de alojamiento con desayuno</li>
-              <li class="list-group-item text-secondary">Visita a la ciudad de Salta</li>
-              <li class="list-group-item text-secondary">Excursión a Cafayate</li>
-              <li class="list-group-item text-primary fw-bold"><a href="#" class="btn btnTour w-50">Reservar</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-12 col-md-6 col-lg-4 text-center">
-          <div class="card w-100">
-            <img src="../images/bariloche.jpg" class="card-img-top" alt="bariloche">
-            <div class="card-body text-center">
-              <h2 class="card-title text-center fs-2 fw-bold text-primary">Bariloche</h2>
-              <p class="text-secondary fs-5">Es conocida por su arquitectura al estilo Suizo y su
-                chocolate, que se vende en la calle Mitre, la avenida principal.</p>
-            </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item text-secondary">Traslado aeropuerto / hotel / aeropuerto</li>
-              <li class="list-group-item text-secondary">7 noches de alojamiento</li>
-              <li class="list-group-item text-secondary">Excursión Circuito Chico y Cerro Catedral</li>
-              <li class="list-group-item text-secondary">Excursión a San Martín de los Andes</li>
-              <li class="list-group-item text-primary fw-bold"><a href="#" class="btn btnTour w-50">Reservar</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+  <section class="page-hero">
+    <div class="bg" style="background-image:url(../images/fondo.jpg)"></div>
+    <div class="wrap">
+      <span class="eyebrow" style="color:var(--sun)">Destinos</span>
+      <h1>Elegí tu próximo destino</h1>
+      <p>Paquetes completos con traslados, alojamiento y excursiones.</p>
+    </div>
   </section>
-
-
-  <!-- End of Main -->
-
-  <!-- Footer -->
-
-  <footer>
-    <div class="anchoFooter">
-      <div class="redes">
-        <a href="https://www.facebook.com/" target="_blank"> <i class="bi bi-facebook fs-1"></i></a>
-        <a href="https://wa.me/541176150927" target="_blank"><i class="bi bi-whatsapp fs-1"></i></a>
-        <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram fs-1"></i></a>
-        <a href="https://www.twitter.com/" target="_blank"><i class="bi bi-twitter fs-1"></i></a>
+  <section class="section">
+    <div class="wrap"><div class="grid-3" style="margin-top:0" data-stagger>
+      <article class="dest-card">
+        <div class="media"><img src="../images/perito.jpg" alt="Calafate" loading="lazy"><span class="tag">Santa Cruz</span></div>
+        <div class="body">
+          <h3>Calafate</h3>
+          <p>El Calafate es una ciudad cerca del borde del Campo de Hielo Patagónico Sur, en la provincia argentina de Santa Cruz.</p>
+          <ul class="checklist"><li>Traslado aeropuerto / hotel / aeropuerto</li><li>3 noches de alojamiento en El Calafate</li><li>Excursión Glaciar Perito Moreno</li><li>Incluye la entrada al parque nacional</li></ul>
+          <a href="../html/contacto.html" class="btn btn-dark btn-block">Reservar</a>
+        </div>
+      </article>
+      <article class="dest-card">
+        <div class="media"><img src="../images/salta.jpg" alt="Salta" loading="lazy"><span class="tag">Noroeste</span></div>
+        <div class="body">
+          <h3>Salta</h3>
+          <p>Capital provincial del noroeste montañoso de Argentina. Fundada en 1582 y conocida por su hermosa arquitectura.</p>
+          <ul class="checklist"><li>Traslado aeropuerto / hotel / aeropuerto</li><li>5 noches de alojamiento con desayuno</li><li>Visita a la ciudad de Salta</li><li>Excursión a Cafayate</li></ul>
+          <a href="../html/contacto.html" class="btn btn-dark btn-block">Reservar</a>
+        </div>
+      </article>
+      <article class="dest-card">
+        <div class="media"><img src="../images/bariloche.jpg" alt="Bariloche" loading="lazy"><span class="tag">Patagonia Norte</span></div>
+        <div class="body">
+          <h3>Bariloche</h3>
+          <p>Conocida por su arquitectura de estilo suizo y su chocolate, que se vende en la calle Mitre, la avenida principal.</p>
+          <ul class="checklist"><li>Traslado aeropuerto / hotel / aeropuerto</li><li>7 noches de alojamiento</li><li>Excursión Circuito Chico y Cerro Catedral</li><li>Excursión a San Martín de los Andes</li></ul>
+          <a href="../html/contacto.html" class="btn btn-dark btn-block">Reservar</a>
+        </div>
+      </article>
+    </div></div>
+  </section>
+  <section class="section">
+    <div class="wrap">
+      <div class="cta" data-reveal>
+        <h2>¿Listo para tu próximo viaje?</h2>
+        <p>Contanos qué te gustaría conocer y armamos el paquete a tu medida.</p>
+        <a href="contacto.html" class="btn btn-primary">Hablemos de tu viaje <i class="bi bi-arrow-right"></i></a>
       </div>
     </div>
+  </section>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="brand">Tango<span>Travel</span></a>
+          <p>Te llevamos a conocer los lugares y las actividades más destacados de Argentina.</p>
+        </div>
+        <ul class="footer-links"><li><a href="../index.html">Inicio</a></li><li><a href="destinos.html" class="active">Destinos</a></li><li><a href="aboutus.html">Nosotros</a></li><li><a href="excursiones.html">Servicios</a></li><li><a href="contacto.html">Contacto</a></li></ul>
+        <div class="socials">
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://wa.me/541176150927" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.twitter.com/" target="_blank" rel="noopener" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+        </div>
+      </div>
+      <p class="copy">© 2026 Tango Travel Agency. Todos los derechos reservados.</p>
+    </div>
   </footer>
-
-  <!-- End of Footer -->
-
 </body>
-
 </html>

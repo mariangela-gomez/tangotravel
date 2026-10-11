@@ -1,243 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="description" content="Somos una Empresa de Viajes y Turismo ubicada en Argentina. Somos Tango Travel." />
-  <meta name="keywords" content="agencia de viajes y turismo en Argentina, agencia de viajes online" />
-
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
-  </script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-  <!-- Google Fonts -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Somos una empresa de viajes y turismo ubicada en Argentina. Somos Tango Travel.">
+  <title>Quiénes somos | Tango Travel</title>
+  <link rel="icon" type="image/png" href="../images/favicon-16x16.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Vollkorn:ital,wght@1,400;1,500;1,600;1,700&display=swap"
-    rel="stylesheet">
-  <!-- cdnjs links -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- styles and JS -->
-  <link rel="stylesheet" href="../css/style.css" />
-  <script defer src="../js/script.js"></script>
-  <title>Quienes somos</title>
-  <link rel="icon" type="image/x-icon" href="../images/favicon-16x16.png">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../css/modern.css">
+  <script>document.documentElement.classList.add('js')</script>
+  <script defer src="../js/vendor/gsap.min.js"></script>
+  <script defer src="../js/vendor/ScrollTrigger.min.js"></script>
+  <script defer src="../js/main.js"></script>
 </head>
-
 <body>
-
-  <!-- Header -->
-
-  <header>
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
-      <div class="container-fluid">
-        <a href="#" class="navbar-brand f-2 fs-2 navbarTitle">Tango Travel Agency</a>
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menuNavegacion">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div id="menuNavegacion" class="collapse navbar-collapse justify-content-sm-start justify-content-lg-end ">
-          <ul class="navbar-nav ms-3 ">
-            <li class="nav-item"><a class="nav-link fs-4" href="../index.html">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link fs-4" href="destinos.html">Destinos</a></li>
-            <li class="nav-item"><a class="nav-link fs-4" href="aboutus.html">Nosotros</a></li>
-            <li class="nav-item"><a class="nav-link fs-4" href="excursiones.html">Servicios</a></li>
-            <li class="nav-item"><a class="nav-link fs-4" href="contacto.html">Contacto</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+  <header class="site-header solid">
+    <div class="wrap nav">
+      <a href="../index.html" class="brand">Tango<span>Travel</span></a>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false"><span></span></button>
+      <ul class="nav-links"><li><a href="../index.html">Inicio</a></li><li><a href="destinos.html">Destinos</a></li><li><a href="aboutus.html" class="active">Nosotros</a></li><li><a href="excursiones.html">Servicios</a></li><li><a href="contacto.html">Contacto</a></li></ul>
+    </div>
   </header>
-
-  <!-- end of Header -->
-
-  <!-- About us -->
-
-  <div class="container-fluid contact">
-    <section class="pt-5">
-      <h1 class="commonTitle mb-5">Quienes somos</h1>
-      <div>
-        <div class="content-box-lg">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="aboutItem text-center">
-                  <i class="bi bi-journal aboutIcon"></i>
-                  <h2>Misión</h2>
-                  <hr>
-                  <p>La empresa brinda una asistencia profesional a todos aquellos que necesiten un servicio de viaje.
-                    El esfuerzo está centrado en brindar respuestas rápidas, precisas y eficientes, buscando satisfacer
-                    a nuestros clientes con nuestro servicio, asesoramiento, compromiso, precio, solución de posibles
-                    inconvenientes (antes, durante ó después de cada viaje). Damos un servicio a medida, tanto para
-                    empresas, como para pasajeros individuales, ya sea viajen por placer o negocios.</p>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="aboutItem text-center">
-                  <i class="bi bi-globe"></i>
-                  <h2>Vision</h2>
-                  <hr>
-                  <p> Promover el crecimiento de la organización, basado en la innovación permanente tanto
-                    en la prestación de los servicios, el acercamiento a los clientes, la calidad de la información
-                    brindada, el asesoramiento adecuado para cada necesidad.
-
-                    Lograr una organización flexible a los cambios que el mercado requiere, anticipar las tendencias
-                    para generar propuestas diferenciadoras y variadas.
-
-                    Fortalecer en forma constante la inversión en tecnología para el desarrollo de nuestra actividad.
-                  </p>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="aboutItem text-center">
-                  <i class="bi bi-pencil-square"></i>
-                  <h2>Valores</h2>
-                  <hr>
-                  <p>Superación de las expectativas de nuestros clientes, orientando todos
-                    nuestros esfuerzos a ofrecer una atención personalizada que les asegure vivir una experiencia única.
-                    Calidad y eficiencia, logrando la optimización de nuestros recursos y
-                    asegurando le efectiva prestación de los servicios comprometidos en el marco de una relación veraz y
-                    transparente.
-                    Responsabilidad social y ambiental, maximizando los impactos positivos de
-                    nuestras operaciones hacia las comunidades locales y el medio ambiente.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- End of About us -->
-
-    <!-- reviews -->
-
-    <section id="testimonial_area" class="section_padding">
-      <h2 class="commonTitle mb-5 mt-5">Comentarios</h2>
-      <div class="container ">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="testmonial_slider_area text-center owl-carousel">
-              <div class="box-area">
-                <div class="img-area">
-                  <img src="../images/1.jpg" alt="customer">
-                </div>
-                <h4>Andres Perati</h4>
-                <span>Excelente viaje!</span>
-                <p class="content">
-                  Ivana consiguió en pocos días los hoteles y
-                  traslados a Bariloche y El Calafate. Nos facilitó la elección de excursiones, las cuales superaron
-                  ampliamente nuestras expectativas.
-                  Super profesionales, lo que se necesita para disfrutar del viaje.
-                  Muchas gracias por la calidad de servicio.
-                </p>
-              </div>
-
-              <div class="box-area">
-                <div class="img-area">
-                  <img src="../images/2.jpg" alt="customer">
-                </div>
-                <h4>Ingrid Mehlberg</h4>
-                <span>Mi primer viaje sola</span>
-                <p class="content">realmente no tenia idea de nada y respondieron todas mis preguntas, siempre
-                  con lujos de detalles y mucha paciencia.
-                  Fue hermoso, bellísimos paisajes, bellísimas personas, todo salió perfecto,
-                  realmente recomiendo la agencia! Volvería a viajar con ellos
-                  definitivamente!!
-                </p>
-              </div>
-
-              <div class="box-area">
-                <div class="img-area">
-                  <img src="../images/3.jpg" alt="customer">
-                </div>
-                <h4>Gerardo Inzunza</h4>
-                <span>de los mejores viajes que he realizado en mi vida</span>
-                <p class="content">
-                  Viajamos mi esposa y yo. Se encargaron de programar y organizarnos el recorrido por El Calafate y
-                  Bariloche y Salta. La
-                  verdad ninguna queja, siempre estuvieron al pendiente de nuestras necesidades desde que
-                  llegamos hasta nuestro regreso. Un 10 para ellos.
-                </p>
-              </div>
-
-              <div class="box-area">
-                <div class="img-area">
-                  <img src="../images/4.jpg" alt="customer">
-                </div>
-                <h4>Alejandro Garcia</h4>
-                <span>100% Recomendados</span>
-                <p class="content">
-                  Viajamos 4 matrimonios una semana a Calafate y Chalten, nos contactamos con Germán le dijimos nuestros
-                  intereses y nos armo todo el paquete, y nos recomendó que hacer y que no. Pasamos impecable, salió
-                  todo como estaba previsto, muy profesional, totalmente recomendable.
-                </p>
-              </div>
-
-              <div class="box-area">
-                <div class="img-area">
-                  <img src="../images/5.jpg" alt="customer">
-                </div>
-                <h4>Luis Alberto Gonzalez</h4>
-                <span>Calidad, Precio, Profesionalismo</span>
-                <p class="content">
-                  Hacía mucho que no viajaba por agencia. Me asesoraron muy profesionalmente y me acompañaron desde el
-                  primer minuto hasta el regreso de mi viaje. El receptivo, el hotel y
-                  las excursiones de primera. Las facilidades de pago ayudaron a lograr el objetivo. Pude relajarme
-                  y disfrutar sin problemas.
-                </p>
-              </div>
-
-              <div class="box-area">
-                <div class="img-area">
-                  <img src="../images/6.jpg" alt="customer">
-                </div>
-                <h4>Flor Duarte</h4>
-                <span>Muy buena atención y servicio</span>
-                <p class="content">
-                  Muy buen servicio , estuvieron todo el tiempo pendiente de lo que solicitábamos , tanto en la
-                  planificación del viaje como en el transcurso del mismo.
-                  Realizamos un viaje de 5 días a Salta contratando las salidas y transportes privados con remises
-                  contratados por la empresa , todo excelente.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <!-- End of Reviews -->
-
-  <!-- Footer -->
-
-  <footer>
-    <div class="anchoFooter">
-      <div class="redes">
-        <a href="https://www.facebook.com/" target="_blank"> <i class="bi bi-facebook fs-1"></i></a>
-        <a href="https://wa.me/541176150927" target="_blank"><i class="bi bi-whatsapp fs-1"></i></a>
-        <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram fs-1"></i></a>
-        <a href="https://www.twitter.com/" target="_blank"><i class="bi bi-twitter fs-1"></i></a>
+  <section class="page-hero">
+    <div class="bg" style="background-image:url(../images/header-bg.jpg)"></div>
+    <div class="wrap">
+      <span class="eyebrow" style="color:var(--sun)">Nosotros</span>
+      <h1>Quiénes somos</h1>
+      <p>Una empresa de viajes y turismo de Argentina, enfocada en brindar respuestas rápidas, precisas y eficientes.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap">
+      <div class="values" data-stagger>
+        <div class="value"><i class="bi bi-journal-text ico"></i><h2>Misión</h2><p>La empresa brinda una asistencia profesional a todos aquellos que necesiten un servicio de viaje. El esfuerzo está centrado en brindar respuestas rápidas, precisas y eficientes, buscando satisfacer a nuestros clientes con nuestro servicio, asesoramiento, compromiso, precio, solución de posibles inconvenientes (antes, durante ó después de cada viaje). Damos un servicio a medida, tanto para empresas, como para pasajeros individuales, ya sea viajen por placer o negocios.</p></div>
+        <div class="value"><i class="bi bi-globe2 ico"></i><h2>Visión</h2><p>Promover el crecimiento de la organización, basado en la innovación permanente tanto en la prestación de los servicios, el acercamiento a los clientes, la calidad de la información brindada, el asesoramiento adecuado para cada necesidad.</p><p>Lograr una organización flexible a los cambios que el mercado requiere, anticipar las tendencias para generar propuestas diferenciadoras y variadas.</p><p>Fortalecer en forma constante la inversión en tecnología para el desarrollo de nuestra actividad.</p></div>
+        <div class="value"><i class="bi bi-heart ico"></i><h2>Valores</h2><p>Superación de las expectativas de nuestros clientes, orientando todos nuestros esfuerzos a ofrecer una atención personalizada que les asegure vivir una experiencia única. Calidad y eficiencia, logrando la optimización de nuestros recursos y asegurando le efectiva prestación de los servicios comprometidos en el marco de una relación veraz y transparente. Responsabilidad social y ambiental, maximizando los impactos positivos de nuestras operaciones hacia las comunidades locales y el medio ambiente.</p></div>
       </div>
     </div>
+  </section>
+
+  <section class="section band">
+    <div class="wrap">
+      <div data-reveal>
+        <span class="eyebrow">Comentarios</span>
+        <h2 class="section-title">Lo que dicen nuestros viajeros</h2>
+      </div>
+      <div class="slider" data-reveal>
+        <div class="slider-track">
+        <article class="review">
+          <div class="stars" aria-label="5 estrellas">★★★★★</div>
+          <h3>Excelente viaje!</h3>
+          <p>Ivana consiguió en pocos días los hoteles y traslados a Bariloche y El Calafate. Nos facilitó la elección de excursiones, las cuales superaron ampliamente nuestras expectativas. Super profesionales, lo que se necesita para disfrutar del viaje. Muchas gracias por la calidad de servicio.</p>
+          <div class="who"><img src="../images/1.jpg" alt="Andres Perati" loading="lazy"><strong>Andres Perati</strong></div>
+        </article>
+        <article class="review">
+          <div class="stars" aria-label="5 estrellas">★★★★★</div>
+          <h3>Mi primer viaje sola</h3>
+          <p>realmente no tenia idea de nada y respondieron todas mis preguntas, siempre con lujos de detalles y mucha paciencia. Fue hermoso, bellísimos paisajes, bellísimas personas, todo salió perfecto, realmente recomiendo la agencia! Volvería a viajar con ellos definitivamente!!</p>
+          <div class="who"><img src="../images/2.jpg" alt="Ingrid Mehlberg" loading="lazy"><strong>Ingrid Mehlberg</strong></div>
+        </article>
+        <article class="review">
+          <div class="stars" aria-label="5 estrellas">★★★★★</div>
+          <h3>de los mejores viajes que he realizado en mi vida</h3>
+          <p>Viajamos mi esposa y yo. Se encargaron de programar y organizarnos el recorrido por El Calafate y Bariloche y Salta. La verdad ninguna queja, siempre estuvieron al pendiente de nuestras necesidades desde que llegamos hasta nuestro regreso. Un 10 para ellos.</p>
+          <div class="who"><img src="../images/3.jpg" alt="Gerardo Inzunza" loading="lazy"><strong>Gerardo Inzunza</strong></div>
+        </article>
+        <article class="review">
+          <div class="stars" aria-label="5 estrellas">★★★★★</div>
+          <h3>100% Recomendados</h3>
+          <p>Viajamos 4 matrimonios una semana a Calafate y Chalten, nos contactamos con Germán le dijimos nuestros intereses y nos armo todo el paquete, y nos recomendó que hacer y que no. Pasamos impecable, salió todo como estaba previsto, muy profesional, totalmente recomendable.</p>
+          <div class="who"><img src="../images/4.jpg" alt="Alejandro Garcia" loading="lazy"><strong>Alejandro Garcia</strong></div>
+        </article>
+        <article class="review">
+          <div class="stars" aria-label="5 estrellas">★★★★★</div>
+          <h3>Calidad, Precio, Profesionalismo</h3>
+          <p>Hacía mucho que no viajaba por agencia. Me asesoraron muy profesionalmente y me acompañaron desde el primer minuto hasta el regreso de mi viaje. El receptivo, el hotel y las excursiones de primera. Las facilidades de pago ayudaron a lograr el objetivo. Pude relajarme y disfrutar sin problemas.</p>
+          <div class="who"><img src="../images/5.jpg" alt="Luis Alberto Gonzalez" loading="lazy"><strong>Luis Alberto Gonzalez</strong></div>
+        </article>
+        <article class="review">
+          <div class="stars" aria-label="5 estrellas">★★★★★</div>
+          <h3>Muy buena atención y servicio</h3>
+          <p>Muy buen servicio , estuvieron todo el tiempo pendiente de lo que solicitábamos , tanto en la planificación del viaje como en el transcurso del mismo. Realizamos un viaje de 5 días a Salta contratando las salidas y transportes privados con remises contratados por la empresa , todo excelente.</p>
+          <div class="who"><img src="../images/6.jpg" alt="Flor Duarte" loading="lazy"><strong>Flor Duarte</strong></div>
+        </article>
+        </div>
+        <div class="slider-nav">
+          <button data-slide="-1" aria-label="Anterior"><i class="bi bi-arrow-left"></i></button>
+          <button data-slide="1" aria-label="Siguiente"><i class="bi bi-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap">
+      <div class="cta" data-reveal>
+        <h2>¿Listo para tu próximo viaje?</h2>
+        <p>Contanos qué te gustaría conocer y armamos el paquete a tu medida.</p>
+        <a href="contacto.html" class="btn btn-primary">Hablemos de tu viaje <i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="brand">Tango<span>Travel</span></a>
+          <p>Te llevamos a conocer los lugares y las actividades más destacados de Argentina.</p>
+        </div>
+        <ul class="footer-links"><li><a href="../index.html">Inicio</a></li><li><a href="destinos.html">Destinos</a></li><li><a href="aboutus.html" class="active">Nosotros</a></li><li><a href="excursiones.html">Servicios</a></li><li><a href="contacto.html">Contacto</a></li></ul>
+        <div class="socials">
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://wa.me/541176150927" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.twitter.com/" target="_blank" rel="noopener" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+        </div>
+      </div>
+      <p class="copy">© 2026 Tango Travel Agency. Todos los derechos reservados.</p>
+    </div>
   </footer>
-
-  <!-- End of Footer -->
-
 </body>
-
 </html>
