@@ -1,130 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="description" content="Actividades, traslados, entradas, visitas guiadas y excursiones en español en Argentina. Reserva online." />
-  <meta name="keywords" content="excursiones, visitas guiadas, tours, actividades, traslados, guias turísticas" />
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
-  </script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="../css/style.css" />
-  <!-- Google Fonts -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Actividades, traslados, entradas, visitas guiadas y excursiones en español en Argentina. Reservá online.">
+  <title>Excursiones y servicios | Tango Travel</title>
+  <link rel="icon" type="image/png" href="../images/favicon-16x16.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Vollkorn:ital,wght@1,400;1,500;1,600;1,700&display=swap"
-    rel="stylesheet">
-  <title>Excursiones y servicios</title>
-  <link rel="icon" type="image/x-icon" href="../images/favicon-16x16.png">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../css/modern.css">
+  <script>document.documentElement.classList.add('js')</script>
+  <script defer src="../js/vendor/gsap.min.js"></script>
+  <script defer src="../js/vendor/ScrollTrigger.min.js"></script>
+  <script defer src="../js/main.js"></script>
 </head>
-
 <body>
-
-  <!-- Header -->
-
-  <header>
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
-      <div class="container-fluid">
-        <a href="#" class="navbar-brand f-2 fs-2 navbarTitle ">Tango Travel Agency</a>
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menuNavegacion">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div id="menuNavegacion" class="collapse navbar-collapse justify-content-sm-start justify-content-lg-end ">
-          <ul class="navbar-nav ms-3">
-            <li class="nav-item"><a class="nav-link fs-4" href="../index.html">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link fs-4" href="destinos.html">Destinos</a></li>
-            <li class="nav-item"><a class="nav-link fs-4" href="aboutus.html">Nosotros</a></li>
-            <li class="nav-item"><a class="nav-link fs-4" href="excursiones.html">Servicios</a></li>
-            <li class="nav-item"><a class="nav-link fs-4" href="contacto.html">Contacto</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+  <header class="site-header solid">
+    <div class="wrap nav">
+      <a href="../index.html" class="brand">Tango<span>Travel</span></a>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false"><span></span></button>
+      <ul class="nav-links"><li><a href="../index.html">Inicio</a></li><li><a href="destinos.html">Destinos</a></li><li><a href="aboutus.html">Nosotros</a></li><li><a href="excursiones.html" class="active">Servicios</a></li><li><a href="contacto.html">Contacto</a></li></ul>
+    </div>
   </header>
-
-  <!-- End of Header -->
-
-  <!-- services -->
-
-  <section class="backgroundImage g-3">
-    <div class="container py-2">
-      <h1 class="text-center text-white mt-5 mb-5 commonTitle">Excursiones y servicios</h1>
-
-      <article class="serviceCard bg-light">
-        <img class="serviceCardImg" src="../images/balcones.jpg" alt="calafate" />
-        <div class="serviceCardText t-dark">
-          <h2 class="fw-bold">Balcón Experience</h2>
-          <div class="serviceCardDescription">La excursión “El Calafate Balcón Experience” permite a los visitantes a El
-            Calafate asomarse a un imponente mirador natural donde podrán disfrutar de una magnífica vista panorámica de
-            El Calafate y el Lago Argentina.</div>
-          <ul class="serviceCardButton">
-            <button class="btn btnTour">Reservar</button>
-          </ul>
-        </div>
+  <section class="page-hero">
+    <div class="bg" style="background-image:url(../images/trekking.jpg)"></div>
+    <div class="wrap">
+      <span class="eyebrow" style="color:var(--sun)">Servicios</span>
+      <h1>Excursiones y servicios</h1>
+      <p>Actividades, traslados, entradas y visitas guiadas en español.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap">
+      <article class="service" data-reveal>
+        <div class="media"><img src="../images/balcones.jpg" alt="calafate" loading="lazy"></div>
+        <div class="body"><span class="num">01</span><h2>Balcón Experience</h2><p>La excursión “El Calafate Balcón Experience” permite a los visitantes asomarse a un imponente mirador natural donde podrán disfrutar de una magnífica vista panorámica de El Calafate y el Lago Argentino.</p><a href="contacto.html" class="btn btn-dark">Reservar</a></div>
       </article>
-      <article class="serviceCard bg-light">
-        <img class="serviceCardImg" src="../images/chalten.jpg" alt="Chalten" />
-        <div class="serviceCardText t-dark">
-          <h2 class="fw-bold">El Chalten</h2>
-          <div class="serviceCardDescription">La mejor combinación de actividades para visitar El Chalten en un solo día
-            desde El Calafate. No es necesario ser un caminante avanzado para poder disfrutar junto a nuestro guía de
-            las dos caminatas a punto panorámicos.</div>
-          <ul class="serviceCardButton">
-            <button class="btn btnTour">Reservar</button>
-          </ul>
-        </div>
+      <article class="service" data-reveal>
+        <div class="media"><img src="../images/chalten.jpg" alt="El Chaltén" loading="lazy"></div>
+        <div class="body"><span class="num">02</span><h2>El Chaltén</h2><p>La mejor combinación de actividades para visitar El Chaltén en un solo día desde El Calafate. No es necesario ser un caminante avanzado para disfrutar junto a nuestro guía de las dos caminatas a puntos panorámicos.</p><a href="contacto.html" class="btn btn-dark">Reservar</a></div>
       </article>
-      <article class="serviceCard bg-light">
-        <img class="serviceCardImg" src="../images/trekking.jpg" alt="perito moreno" />
-        <div class="serviceCardText t-dark">
-          <h2 class="fw-bold">Glaciar Sur Aventura</h2>
-          <div class="serviceCardDescription">Es un tour dirigido a viajeros que disfrutan caminar en lugares
-            recónditos. Verdaderamente quienes han realizado este trekking sienten que son los primeros en llegar a los
-            lugares que visitan.</div>
-          <ul class="serviceCardButton">
-            <button class="btn btnTour">Reservar</button>
-            </li>
-          </ul>
-        </div>
+      <article class="service" data-reveal>
+        <div class="media"><img src="../images/trekking.jpg" alt="Perito Moreno" loading="lazy"></div>
+        <div class="body"><span class="num">03</span><h2>Glaciar Sur Aventura</h2><p>Un tour dirigido a viajeros que disfrutan caminar en lugares recónditos. Quienes han realizado este trekking sienten que son los primeros en llegar a los lugares que visitan.</p><a href="contacto.html" class="btn btn-dark">Reservar</a></div>
       </article>
-      <article class="serviceCard bg-light">
-        <img class="serviceCardImg" src="../images/estancia.webp" alt="estancia 25 de mayo" />
-        <div class="serviceCardText t-dark">
-          <h2 class=" fw-bold">Estancia 25 de Mayo</h2>
-          <div class="serviceCardDescription">Estancia 25 de Mayo cuenta con 17.000 hectáreas de campo, y su antiguo
-            casco queda ubicado a pasos del centro de El Calafate, un lugar ideal donde poder descansar y disfrutar del
-            paisaje al pie del Cerro Calafate.</div>
-          <ul class="serviceCardButton">
-            <button class="btn btnTour">Reservar</button>
-          </ul>
-        </div>
+      <article class="service" data-reveal>
+        <div class="media"><img src="../images/estancia.webp" alt="Estancia 25 de Mayo" loading="lazy"></div>
+        <div class="body"><span class="num">04</span><h2>Estancia 25 de Mayo</h2><p>Cuenta con 17.000 hectáreas de campo, y su antiguo casco queda a pasos del centro de El Calafate, un lugar ideal para descansar y disfrutar del paisaje al pie del Cerro Calafate.</p><a href="contacto.html" class="btn btn-dark">Reservar</a></div>
       </article>
     </div>
   </section>
-
-  <!-- End of Services  -->
-
-  <!-- Footer -->
-
-  <footer>
-    <div class="anchoFooter">
-      <div class="redes">
-        <a href="https://www.facebook.com/" target="_blank"> <i class="bi bi-facebook fs-1"></i></a>
-        <a href="https://wa.me/541176150927" target="_blank"><i class="bi bi-whatsapp fs-1"></i></a>
-        <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram fs-1"></i></a>
-        <a href="https://www.twitter.com/" target="_blank"><i class="bi bi-twitter fs-1"></i></a>
+  <section class="section">
+    <div class="wrap">
+      <div class="cta" data-reveal>
+        <h2>¿Listo para tu próximo viaje?</h2>
+        <p>Contanos qué te gustaría conocer y armamos el paquete a tu medida.</p>
+        <a href="contacto.html" class="btn btn-primary">Hablemos de tu viaje <i class="bi bi-arrow-right"></i></a>
       </div>
     </div>
+  </section>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="brand">Tango<span>Travel</span></a>
+          <p>Te llevamos a conocer los lugares y las actividades más destacados de Argentina.</p>
+        </div>
+        <ul class="footer-links"><li><a href="../index.html">Inicio</a></li><li><a href="destinos.html">Destinos</a></li><li><a href="aboutus.html">Nosotros</a></li><li><a href="excursiones.html" class="active">Servicios</a></li><li><a href="contacto.html">Contacto</a></li></ul>
+        <div class="socials">
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://wa.me/541176150927" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.twitter.com/" target="_blank" rel="noopener" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+        </div>
+      </div>
+      <p class="copy">© 2026 Tango Travel Agency. Todos los derechos reservados.</p>
+    </div>
   </footer>
-
-  <!-- End of Footer -->
-
 </body>
-
 </html>

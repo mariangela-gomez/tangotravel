@@ -1,92 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="description" content="Tango travel te lleva a conocer los lugares y las actividades más destacadas y mejor valorados de Argentina.">
-  <meta name="keywords" content="viajes, Argentina, Patagonia, turismo">
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
-  </script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="css/style.css" />
-  <!-- Google Fonts -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tango travel te lleva a conocer los lugares y las actividades más destacadas y mejor valoradas de Argentina.">
+  <title>Tango Travel Agency | Viajes por Argentina</title>
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Vollkorn:ital,wght@1,400;1,500;1,600;1,700&display=swap"
-    rel="stylesheet">
-  <title>Tango Travel Agency</title>
-  <link rel="icon" type="image/x-icon" href="images/favicon-16x16.png">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/modern.css">
+  <script>document.documentElement.classList.add('js')</script>
+  <script defer src="js/vendor/gsap.min.js"></script>
+  <script defer src="js/vendor/ScrollTrigger.min.js"></script>
+  <script defer src="js/main.js"></script>
 </head>
-
 <body>
-
-  <!-- Header -->
-
-  <header>
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
-      <div class="container-fluid">
-        <a href="#" class="navbar-brand fs-2  navbarTitle">Tango Travel Agency</a>
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menuNavegacion">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div id="menuNavegacion" class="collapse navbar-collapse justify-content-sm-start justify-content-lg-end">
-          <ul class="navbar-nav ms-3  ">
-            <li class="nav-item "><a class="nav-link fs-4" href="index.html">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link fs-4" href="html/destinos.html">Destinos</a></li>
-            <li class="nav-item"><a class="nav-link fs-4" href="html/aboutus.html">Nosotros</a></li>
-            <li class="nav-item"><a class="nav-link fs-4" href="html/excursiones.html">Servicios</a></li>
-            <li class="nav-item"><a class="nav-link fs-4" href="html/contacto.html">Contacto</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <!-- End of Header -->
-
-  <!-- content -->
-  <section class="indexPage">
-    <div class="container-fluid">
-      <div class="row ">
-        <main class="main center">
-          <div class="mainText">
-            <h1 class="mainH1 d-none d-lg-block">Conociendo Argentina</h1>
-            <p class="mainParagraph fs-4">
-              Te invitamos a descubrir puntos de interés en distintos lugares del país para que puedas planificar tu
-              próximo
-              viaje
-            </p>
-          </div>
-          <img src="images/air-balloon2.png" alt="main Image" class="main-image d-none d-lg-block" />
-      </div>
-      </main>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a href="index.html" class="brand">Tango<span>Travel</span></a>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false"><span></span></button>
+      <ul class="nav-links"><li><a href="index.html" class="active">Inicio</a></li><li><a href="html/destinos.html">Destinos</a></li><li><a href="html/aboutus.html">Nosotros</a></li><li><a href="html/excursiones.html">Servicios</a></li><li><a href="html/contacto.html">Contacto</a></li></ul>
     </div>
+  </header>
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <img class="hero-balloon" src="images/air-balloon2.png" alt="" aria-hidden="true">
+    <div class="hero-inner">
+      <h1><span class="line"><span>Conociendo</span></span><span class="line"><span><em>Argentina</em></span></span></h1>
+      <p>Te invitamos a descubrir puntos de interés en distintos lugares del país para que puedas planificar tu próximo viaje.</p>
+      <div class="hero-cta">
+        <a href="html/destinos.html" class="btn btn-primary">Ver destinos <i class="bi bi-arrow-right"></i></a>
+        <a href="html/contacto.html" class="btn btn-ghost">Contactanos</a>
+      </div>
+    </div>
+    <div class="scroll-cue" aria-hidden="true"></div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="center" data-reveal>
+        <span class="eyebrow">Destinos</span>
+        <h2 class="section-title">Paquetes pensados para disfrutar</h2>
+        <p class="section-lead">Traslados, alojamiento y excursiones incluidos en los destinos más elegidos del país.</p>
+      </div>
+      <div class="grid-3" data-stagger>
+      <article class="dest-card">
+        <div class="media"><img src="images/perito.jpg" alt="Calafate" loading="lazy"><span class="tag">Santa Cruz</span></div>
+        <div class="body">
+          <h3>Calafate</h3>
+          <p>El Calafate es una ciudad cerca del borde del Campo de Hielo Patagónico Sur, en la provincia argentina de Santa Cruz.</p>
+          <ul class="checklist"><li>Traslado aeropuerto / hotel / aeropuerto</li><li>3 noches de alojamiento en El Calafate</li><li>Excursión Glaciar Perito Moreno</li><li>Incluye la entrada al parque nacional</li></ul>
+          <a href="html/contacto.html" class="btn btn-dark btn-block">Reservar</a>
+        </div>
+      </article>
+      <article class="dest-card">
+        <div class="media"><img src="images/salta.jpg" alt="Salta" loading="lazy"><span class="tag">Noroeste</span></div>
+        <div class="body">
+          <h3>Salta</h3>
+          <p>Capital provincial del noroeste montañoso de Argentina. Fundada en 1582 y conocida por su hermosa arquitectura.</p>
+          <ul class="checklist"><li>Traslado aeropuerto / hotel / aeropuerto</li><li>5 noches de alojamiento con desayuno</li><li>Visita a la ciudad de Salta</li><li>Excursión a Cafayate</li></ul>
+          <a href="html/contacto.html" class="btn btn-dark btn-block">Reservar</a>
+        </div>
+      </article>
+      <article class="dest-card">
+        <div class="media"><img src="images/bariloche.jpg" alt="Bariloche" loading="lazy"><span class="tag">Patagonia Norte</span></div>
+        <div class="body">
+          <h3>Bariloche</h3>
+          <p>Conocida por su arquitectura de estilo suizo y su chocolate, que se vende en la calle Mitre, la avenida principal.</p>
+          <ul class="checklist"><li>Traslado aeropuerto / hotel / aeropuerto</li><li>7 noches de alojamiento</li><li>Excursión Circuito Chico y Cerro Catedral</li><li>Excursión a San Martín de los Andes</li></ul>
+          <a href="html/contacto.html" class="btn btn-dark btn-block">Reservar</a>
+        </div>
+      </article>
+      </div>
     </div>
   </section>
 
-  <!-- End of content -->
+  <section class="section band">
+    <div class="wrap split">
+      <div data-reveal>
+        <span class="eyebrow">Por qué Tango Travel</span>
+        <h2 class="section-title">Un servicio a medida, antes, durante y después</h2>
+        <p class="section-lead">Asesoramiento profesional, respuestas rápidas y atención personalizada para que vos solo te ocupes de disfrutar.</p>
+        <a href="html/aboutus.html" class="btn btn-primary" style="margin-top:12px">Conocenos <i class="bi bi-arrow-right"></i></a>
+      </div>
+      <div class="visual" data-reveal><img src="images/chalten.jpg" alt="El Chaltén" loading="lazy" data-parallax style="height:118%"></div>
+    </div>
+  </section>
 
-  <!-- Footer -->
-
-  <footer>
-    <div class="anchoFooter">
-      <div class="socialMedia">
-        <a href="https://www.facebook.com/" target="_blank"> <i class="bi bi-facebook fs-1"></i></a>
-        <a href="https://wa.me/541176150927" target="_blank"><i class="bi bi-whatsapp fs-1"></i></a>
-        <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram fs-1"></i></a>
-        <a href="https://www.twitter.com/" target="_blank"><i class="bi bi-twitter fs-1"></i></a>
+  <section class="section">
+    <div class="wrap">
+      <div class="center" data-reveal>
+        <span class="eyebrow">Servicios</span>
+        <h2 class="section-title">Todo lo que necesitás para tu viaje</h2>
+      </div>
+      <div class="features" data-stagger>
+        <div class="feature"><div class="ico"><i class="bi bi-compass"></i></div><h3>Asesoramiento</h3><p>Te ayudamos a elegir destinos y actividades según tus intereses.</p></div>
+        <div class="feature"><div class="ico"><i class="bi bi-geo-alt"></i></div><h3>Excursiones</h3><p>Visitas guiadas, trekking y salidas en español en los mejores lugares.</p></div>
+        <div class="feature"><div class="ico"><i class="bi bi-airplane"></i></div><h3>Traslados</h3><p>Aeropuerto, hotel y excursiones coordinados de punta a punta.</p></div>
+        <div class="feature"><div class="ico"><i class="bi bi-headset"></i></div><h3>Acompañamiento</h3><p>Estamos pendientes de tus necesidades durante todo el viaje.</p></div>
       </div>
     </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="cta" data-reveal>
+        <h2>¿Listo para tu próximo viaje?</h2>
+        <p>Contanos qué te gustaría conocer y armamos el paquete a tu medida.</p>
+        <a href="html/contacto.html" class="btn btn-primary">Hablemos de tu viaje <i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand">Tango<span>Travel</span></a>
+          <p>Te llevamos a conocer los lugares y las actividades más destacados de Argentina.</p>
+        </div>
+        <ul class="footer-links"><li><a href="index.html" class="active">Inicio</a></li><li><a href="html/destinos.html">Destinos</a></li><li><a href="html/aboutus.html">Nosotros</a></li><li><a href="html/excursiones.html">Servicios</a></li><li><a href="html/contacto.html">Contacto</a></li></ul>
+        <div class="socials">
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="https://wa.me/541176150927" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.twitter.com/" target="_blank" rel="noopener" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+        </div>
+      </div>
+      <p class="copy">© 2026 Tango Travel Agency. Todos los derechos reservados.</p>
+    </div>
   </footer>
-
-  <!-- End of Footer -->
-
 </body>
-
 </html>
